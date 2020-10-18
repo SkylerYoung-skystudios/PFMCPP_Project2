@@ -67,9 +67,9 @@ void variableDeclarations()
     int size = 93;
     int time = 32;
 
-    float length = 35.55;
-    float duration = 23.9;
-    float width = 873.3; 
+    float length = 35.55; FIXME: initialize floats with floats, not doubles or ints
+    float duration = 23.9; FIXME: initialize floats with floats, not doubles or ints
+    float width = 873.3; FIXME: initialize floats with floats, not doubles or ints
 
     bool tie = false;
     bool hard = true;
@@ -107,7 +107,7 @@ float waveLength (bool polarity, float peak)
 /*
  2)
  */
- int notes (int octaves = 4, bool chromatic = true)
+ int notes (int octaves = 4, bool chromatic = true) FIXME: indentation
 {
     ignoreUnused(octaves, chromatic);
     return {};
@@ -116,7 +116,7 @@ float waveLength (bool polarity, float peak)
 /*
  3)
  */
- bool noteOn (int midiTrigger, int velocity, int source, int channels, bool voices = 24)
+ bool noteOn (int midiTrigger, int velocity, int source, int channels, bool voices = 24) FIXME: indentation
 {
     ignoreUnused(midiTrigger, velocity, source, channels, voices);
     return {};
@@ -125,7 +125,7 @@ float waveLength (bool polarity, float peak)
 /*
  4)
  */
- int volume (bool mono, float spl, float distance)
+ int volume (bool mono, float spl, float distance) FIXME: indentation
 {
     ignoreUnused(mono, spl, distance);
     return {};
@@ -134,14 +134,14 @@ float waveLength (bool polarity, float peak)
 /*
  5)
  */
- void push (int parameter)
+ void push (int parameter) FIXME: indentation
 {
     ignoreUnused(parameter);
 }
 /*
  6)
  */
- double sampleTime (int channel, char file, char name )
+ double sampleTime (int channel, char file, char name ) FIXME: indentation
 {
     ignoreUnused(channel, file, name);
     return {};
@@ -157,7 +157,7 @@ int mix (int amount, int dryVolume = 0, int wetVolume = 0)
 /*
  8)
  */
- double topFrequency (double samplelratetime)
+ double topFrequency (double samplelratetime) FIXME: indentation
 {
     ignoreUnused(samplelratetime);
     return {};
@@ -165,14 +165,14 @@ int mix (int amount, int dryVolume = 0, int wetVolume = 0)
 /*
  9)
  */
- void mute (double input, double output = 0)
+ void mute (double input, double output = 0) FIXME: indentation
 {
     ignoreUnused(input, output);
 }
 /*
  10)
  */
- int sleepRequired (int age, int weight, bool male = true)
+ int sleepRequired (int age, int weight, bool male = true) FIXME: indentation
 {
     ignoreUnused(age, weight, male );
     return {};
@@ -197,13 +197,13 @@ int main()
     auto carRented = rentACar(6, 2); 
     
     //1)
-    auto snare = waveLength(true, 23.44);
+    auto snare = waveLength(true, 23.44); FIXME: initialize floats with floats, not doubles or ints
     //2)
     auto synth = notes(2, true);
     //3)
     auto input = noteOn(34, 108, 2, 2, 6);
     //4)
-    auto vocals = volume(true, 355.44, 23);
+    auto vocals = volume(true, 355.44, 23); FIXME: initialize floats with floats, not doubles or ints
     //5)
     push(2);
     //6)
